@@ -1,0 +1,63 @@
+.WeaponDetails {
+  user-select: none;
+}
+
+.WeaponDetailsName {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.WeaponDetailsNameCaliber {
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 0.25em;
+}
+
+.WeaponDetailsDescription {
+  font-weight: 300;
+  height: calc(1.3em * 3);
+  overflow: auto;
+  padding-right: 1em;
+}
+
+.WeaponDetailsStats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 0.25em;
+  margin-top: 0.5em;
+}
+
+.WeaponDetailsStat {
+  align-items: baseline;
+  display: flex;
+  font-size: 1.1em;
+  margin-top: 0.5em;
+}
+
+.WeaponDetailsStatName {
+  color: var(--text-secondary);
+  font-family: BenchNine, 'Fira Sans Extra Condensed', sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.WeaponDetailsStatValue {
+  color: var(--text-primary);
+  letter-spacing: unset;
+  line-height: 1em;
+  margin-left: 0.8em;
+}
+
+@media (max-width: 864px) {
+  .WeaponDetails {
+    font-size: unset;
+  }
+
+  .WeaponDetailsStats {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,84 @@
+@keyframes highlight {
+  0% {
+    opacity: 0;
+    width: 4px;
+  }
+  50% {
+    opacity: 1;
+    width: 6px;
+  }
+  100% {
+    opacity: 1;
+    width: 4px;
+  }
+}
+
+.AnimalListItem {
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+}
+
+.AnimalListItem::before {
+  background-color: var(--brand);
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 125ms ease-in-out;
+  width: 2px;
+}
+
+.AnimalListItem::after {
+  background: var(--brand);
+  background: linear-gradient(90deg, var(--brand-semi) 0%, var(--brand-transparent) 100%);
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 125ms ease-in-out;
+}
+
+.AnimalListItem:hover::before {
+  opacity: 1;
+}
+
+.AnimalListItemContent {
+  padding: 0.5em 0.75em;
+  position: relative;
+}
+
+.AnimalListItemContent::before {
+  background-color: var(--brand);
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.AnimalListItemActive {
+  border-left-color: var(--brand);
+}
+
+.AnimalListItemActive::after {
+  opacity: 1;
+}
+
+.AnimalListItemActive .AnimalListItemContent::before {
+  animation-delay: 120ms;
+  animation-duration: 350ms;
+  animation-name: highlight;
+  animation-fill-mode: forwards;
+}
+
+.AnimalListItemActive .AnimalListItemTitle {
+  color: var(--brand);
+}

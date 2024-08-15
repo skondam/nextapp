@@ -1,0 +1,50 @@
+.AnimalName {
+  line-height: 1em;
+}
+
+.AnimalNameLatin {
+  color: var(--text-secondary);
+  font-size: 0.85em;
+  font-style: italic;
+  line-height: 1.2em;
+  margin-top: 0.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.AnimalNameTitle {
+  color: var(--text-primary);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  line-height: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 125ms ease-in-out;
+  white-space: nowrap;
+}
+
+.AnimalNameHighlighted .AnimalNameTitle {
+  color: var(--brand);
+}
+
+@media (max-width: 864px) {
+  .AnimalNameResponsiveMobile {
+    align-items: baseline;
+    display: flex;
+  }
+
+  .AnimalNameResponsiveMobile .AnimalNameLatin {
+    margin: 0 0 0 0.5em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .AnimalNameResponsiveTablet {
+    align-items: baseline;
+    display: flex;
+  }
+
+  .AnimalNameResponsiveTablet .AnimalNameLatin {
+    margin: 0 0 0 0.5em;
+  }
+}

@@ -1,0 +1,112 @@
+.AnimalEditorGroupBuilder {
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.AnimalEditorGroupBuilderAgeButtons {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.AnimalEditorGroupBuilderButtonConfirm {
+  background-color: var(--info);
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.AnimalEditorGroupBuilderButtonConfirm:hover {
+  background-color: var(--elevation1);
+}
+
+.AnimalEditorGroupBuilderButtons {
+  display: grid;
+  grid-gap: 0.5em;
+  width: 100%;
+}
+
+.AnimalEditorGroupBuilderLabel {
+  color: var(--text-primary);
+  font-size: 0.9em;
+}
+
+.AnimalEditorGroupBuilderList {
+  background-color: var(--elevation1);
+  border-radius: 0.25em;
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-gap: 0.25em;
+  min-height: 6.5rem;
+  padding: 0.25em;
+  position: relative;
+  user-select: none;
+}
+
+.AnimalEditorGroupBuilderListEntry {
+  align-items: center;
+  background-color: var(--elevation2);
+  display: grid;
+  grid-template-columns: 1.5em 4.3em 1.5em 3.4em 1.5em 1fr;
+  padding: 0.25em;
+  position: relative;
+}
+
+.AnimalEditorGroupBuilderListEntryOverlay {
+  align-items: center;
+  background-color: var(--danger);
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.AnimalEditorGroupBuilderListEntry:hover .AnimalEditorGroupBuilderListEntryOverlay {
+  opacity: 0.8;
+}
+
+.AnimalEditorGroupBuilderListEntryRating {
+  align-items: center;
+  color: var(--light-primary);
+  display: flex;
+}
+
+.AnimalEditorGroupBuilderListEntryValue {
+  color: var(--text-primary);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin-right: 0.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.AnimalEditorGroupBuilderRatingButtons {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.AnimalEditorGroupBuilderSection {
+  display: grid;
+  grid-gap: 0.2em;
+}
+
+.AnimalEditorGroupBuilderButtonToggle {
+  background-color: var(--elevation5);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 0.5em 0.25em;
+}
+
+.AnimalEditorGroupBuilderButtonToggle:hover {
+  background-color: var(--elevation1);
+}
+
+.AnimalEditorGroupBuilderButtonToggleActive {
+  background-color: var(--elevation1);
+  color: var(--brand);
+}

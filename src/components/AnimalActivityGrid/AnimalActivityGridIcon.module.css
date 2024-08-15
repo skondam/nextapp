@@ -1,0 +1,15 @@
+.AnimalActivityGridIconIntermediate img {
+  opacity: 0.4;
+  transition: transform 75ms linear;
+  transform: scale(0.7);
+}
+
+.AnimalActivityGridIconIntermediate:hover {
+  transform: unset;
+}
+
+@media (max-width: 864px) {
+  .AnimalActivityGridIconIntermediate {
+    transform: scale(0.8);
+  }
+}

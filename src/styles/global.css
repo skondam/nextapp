@@ -1,0 +1,148 @@
+:root {
+  --brand: rgb(231, 190, 112);
+  --brand-semi: rgba(231, 190, 112, 0.5);
+  --brand-transparent: rgba(231, 190, 112, 0);
+  --danger: #ba181b;
+  --elevation0: #000000;
+  --elevation1: #060606;
+  --elevation2: #121212;
+  --elevation3: #171717;
+  --elevation4: #1e1e1e;
+  --elevation5: #202020;
+  --elevation6: #282828;
+  --elevation8: #2f2f2f;
+  --highlight: #014f86;
+  --info: #0353a4;
+  --light-primary: #ebddd2;
+  --map-scale-off: #ffffff;
+  --map-scale-on: #000000;
+  --map-scale-text: #ffffff;
+  --marker-exploration: #890010;
+  --marker-generic: #99e3e4;
+  --marker-landmark: #8cd886;
+  --marker-lodge: #95db91;
+  --marker-tracking: #00558e;
+  --separator: rgba(140, 130, 120, 0.5);
+  --shadow: 0 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.2);
+  --shadow-strong: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --text-highlight: #ffffff;
+  --text-primary: rgb(235, 221, 210);
+  --text-secondary: #948b82;
+  --trophy-rating: #ffffff;
+  --variance-optimal: #208b3a;
+  --variance-suboptimal: #f35b04;
+
+  --toastify-color-dark: var(--elevation0);
+  --toastify-text-color-dark: var(--text-primary);
+  --toastify-toast-min-height: 3em;
+  --toastify-toast-width: 20em;
+}
+
+html,
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+}
+
+body,
+#__next {
+  overflow: hidden;
+}
+
+#__next {
+  height: 100%;
+  width: 100%;
+}
+
+code {
+  background-color: var(--text-primary);
+  border-radius: 0.25em;
+  color: var(--elevation0);
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 0.2em 0.5em;
+}
+
+hr {
+  background-color: var(--separator);
+  border: none;
+  height: 1px;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+hr:last-child {
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0 0 0 1.8em;
+}
+
+ol:not(:first-child),
+ul:not(:first-child) {
+  margin-top: 0.5em;
+}
+
+ol:not(:last-child),
+ul:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+li {
+  line-height: 1.6em;
+  margin: 0;
+  padding-left: 0.4em;
+}
+
+li::marker {
+  color: var(--text-secondary);
+}
+
+p {
+  line-height: 1.6em;
+  margin: 0;
+}
+
+p + p {
+  margin-top: 0.7em;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+*::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: var(--light-primary);
+  border-color: transparent;
+  border-radius: 0.3rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  width: 0.3rem;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--brand);
+}

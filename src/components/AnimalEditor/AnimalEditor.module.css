@@ -1,0 +1,28 @@
+.AnimalEditorActionReset {
+  background-color: var(--danger);
+}
+
+.AnimalEditorActionSave {
+  background-color: var(--info);
+}
+
+.AnimalEditorContent {
+  padding: 0 0.65em;
+}
+
+.AnimalEditorDates {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.AnimalEditorIconPreview {
+
+}
+
+.AnimalEditorText {
+  color: var(--text-primary);
+  font-size: 0.8em;
+  line-height: 1em;
+  margin-left: 0.1rem;
+}

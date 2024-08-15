@@ -1,0 +1,39 @@
+.PivotTableEnergyRating {
+  align-items: center;
+  background-color: var(--elevation5);
+  border-radius: 0.25em;
+  color: var(--text-secondary);
+  display: flex;
+  flex: 1;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  justify-content: center;
+  margin: 0 auto;
+  min-width: 5rem;
+  opacity: 0.75;
+  padding: 0.5rem;
+  text-align: center;
+  transition: background-color 150ms ease-in-out,
+    color 150ms ease-in-out,
+    opacity 150ms ease-in-out;
+  width: 100%;
+}
+
+.PivotTableEnergyRatingOptimal {
+  background-color: var(--variance-optimal);
+  color: var(--text-highlight);
+  opacity: unset;
+}
+
+.PivotTableEnergyRatingSuboptimal {
+  background-color: var(--variance-suboptimal);
+  color: var(--text-highlight);
+  opacity: unset;
+}
+
+@media (max-width: 864px) {
+  .PivotTableEnergyRating {
+    min-width: unset;
+  }
+}

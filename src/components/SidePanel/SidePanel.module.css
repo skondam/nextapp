@@ -1,0 +1,134 @@
+.SidePanel {
+  background-color: var(--elevation2);
+  box-shadow: var(--shadow-strong);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  grid-area: sidebar;
+  height: 100%;
+  min-width: 20em;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: transform 100ms linear;
+  width: 20em;
+  z-index: 100;
+}
+
+.SidePanelActions {
+  display: grid;
+  grid-gap: 0.5em;
+  padding: 0.65em;
+  user-select: none;
+}
+
+.SidePanelActions button {
+  display: block;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.SidePanelContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.SidePanelContent {
+  flex: 1;
+  line-height: 1.3em;
+  overflow: auto;
+}
+
+.SidePanelHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.65em;
+  user-select: none;
+}
+
+.SidePanelHeaderAction {
+  background-color: transparent;
+  border-radius: 100%;
+  font-size: 0.7em;
+  padding: 0;
+}
+
+.SidePanelHeaderAction:active,
+.SidePanelHeaderAction:hover {
+  background-color: var(--elevation0);
+}
+
+.SidePanelHeaderTitle {
+  color: var(--brand);
+  font-family: BenchNine, 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.SidePanelLoadingOverlay {
+  background-color: var(--elevation2);
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.SidePanelLeft {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.SidePanelLeft.SidePanelEntering {
+  transform: translateX(0%);
+}
+
+.SidePanelLeft.SidePanelEntered {
+  transform: translateX(0%);
+}
+
+.SidePanelLeft.SidePanelExiting {
+  transform: translateX(-100%);
+}
+
+.SidePanelLeft.SidePanelExited {
+  transform: translateX(-100%);
+}
+
+.SidePanelRight {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.SidePanelRight.SidePanelEntering {
+  transform: translateX(0%);
+}
+
+.SidePanelRight.SidePanelEntered {
+  transform: translateX(0%);
+}
+
+.SidePanelRight.SidePanelExiting {
+  transform: translateX(100%);
+}
+
+.SidePanelRight.SidePanelExited {
+  transform: translateX(100%);
+}
+
+@media (max-width: 576px) {
+  .SidePanel {
+    left: 0;
+    width: 100%;
+  }
+}

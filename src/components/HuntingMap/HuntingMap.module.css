@@ -1,0 +1,39 @@
+.HuntingMap {
+  background-color: var(--elevation2);
+  flex: 1;
+  overflow: hidden;
+}
+
+.HuntingMapDragging {
+  cursor: grabbing;
+}
+
+.HuntingMapImage {
+  backface-visibility: hidden;
+  background-color: var(--elevation0);
+  box-shadow: var(--shadow-strong);
+  height: 100%;
+  user-select: none;
+  width: 100%;
+}
+
+.HuntingMapImageWrapper {
+  user-select: none;
+  will-change: height, translate, width;
+}
+
+.HuntingMapMarkerCustom {
+  z-index: 6;
+}
+
+.HuntingMapMarkerGeneric {
+  color: var(--marker-generic);
+}
+
+.HuntingMapMarkerLandmark {
+  color: var(--marker-landmark);
+}
+
+.HuntingMapMarkerLodge {
+  color: var(--marker-lodge);
+}

@@ -1,0 +1,13 @@
+.Label {
+  color: var(--text-secondary);
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 0.25em;
+  margin-left: 0.1rem;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.Label:not(:first-child) {
+  margin-top: 1.5em;
+}

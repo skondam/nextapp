@@ -1,0 +1,14 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.LayoutContent {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}

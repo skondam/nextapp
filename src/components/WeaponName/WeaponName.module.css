@@ -1,0 +1,50 @@
+.WeaponName {
+  line-height: 1em;
+}
+
+.WeaponNameCalibre {
+  color: var(--text-secondary);
+  font-size: 0.85em;
+  font-style: italic;
+  line-height: 1.2em;
+  margin-top: 0.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.WeaponNameTitle {
+  color: var(--text-primary);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  line-height: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 125ms ease-in-out;
+  white-space: nowrap;
+}
+
+.WeaponNameHighlighted .WeaponNameTitle {
+  color: var(--brand);
+}
+
+@media (max-width: 864px) {
+  .WeaponNameResponsiveMobile {
+    align-items: baseline;
+    display: flex;
+  }
+
+  .WeaponNameResponsiveMobile .WeaponNameCalibre {
+    margin: 0 0 0 0.5em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .WeaponNameResponsiveTablet {
+    align-items: baseline;
+    display: flex;
+  }
+
+  .WeaponNameResponsiveTablet .WeaponNameCalibre {
+    margin: 0 0 0 0.5em;
+  }
+}

@@ -1,0 +1,68 @@
+.HuntingMapFilter {
+  z-index: 150;
+}
+
+.HuntingMapFilterActionClear {
+  background-color: var(--info);
+}
+
+.HuntingMapFilterMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.HuntingMapFilterMenuItem {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 3em;
+  justify-content: space-between;
+  padding: 0 1em;
+  transition: background-color 100ms ease-in-out;
+  user-select: none;
+}
+
+.HuntingMapFilterMenuItem:hover {
+  background-color: var(--elevation5);
+}
+
+.HuntingMapFilterMenuItemEnabled svg {
+  transform: scale(1.15);
+}
+
+.HuntingMapFilterMenuItemIcon,
+.HuntingMapFilterMenuOptionCheckbox {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 2.5em;
+}
+
+.HuntingMapFilterMenuItemLabel {
+  flex: 1;
+  font-size: 1.1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.HuntingMapFilterMenuItemEnabled .HuntingMapFilterMenuItemLabel {
+  color: var(--brand);
+}
+
+.HuntingMapFilterSectionHeader {
+  cursor: pointer;
+}
+
+.HuntingMapFilterSectionHeader:hover {
+  background: var(--elevation5);
+}
+
+.HuntingMapFilterToggle {
+  left: 0.5em;
+  position: absolute;
+  top: 0.5em;
+  z-index: 10;
+}

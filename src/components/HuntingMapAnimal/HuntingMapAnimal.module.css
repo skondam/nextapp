@@ -1,0 +1,30 @@
+@value Icon from '../Icon/Icon.module.css';
+
+.HuntingMapAnimal {
+  cursor: pointer;
+  z-index: 1;
+}
+
+.HuntingMapAnimalActive {
+  z-index: 3;
+}
+
+.HuntingMapAnimalActive .Icon {
+  transform: scale(1.2) !important;
+}
+
+.HuntingMapAnimalEdited {
+  filter: drop-shadow(0 0 0.4em currentColor);
+}
+
+.HuntingMapAnimalRating {
+  color: var(--trophy-rating);
+  left: 0;
+  position: absolute;
+  top: 90%;
+  z-index: 1;
+}
+
+.HuntingMapAnimalZone {
+  z-index: 4;
+}

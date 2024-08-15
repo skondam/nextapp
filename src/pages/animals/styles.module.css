@@ -1,0 +1,22 @@
+.WeaponSelectorPage {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 100%;
+}
+
+.WeaponSelectorPageNotification {
+  margin: 10vh auto 0 auto;
+  max-width: 40em;
+  width: 100%;
+}
+
+.WeaponSelectorPageSeparator {
+  margin: 1em 0;
+}
+
+@media (max-width: 768px) {
+  .WeaponSelectorPage {
+    display: block;
+    grid-template-columns: unset;
+  }
+}
